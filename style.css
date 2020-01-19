@@ -365,6 +365,23 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+.Name {
+    font-size: 1em !important;
+}
+
+.content-r {
+    margin-top: -10px;
+    font-size: 0.9em !important;
+    opacity: 0.6;
+}
+
+.Button {
+    padding: 10px !important;
+    background: #fff !important;
+    color: #101010 !important;
+    background-color: #fff !important;
+}
+
 .header {
     position: absolute;
     top: 50%;
