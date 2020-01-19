@@ -408,6 +408,10 @@ body {
 }
 
 @media(max-width: 900px) {
+    .no-mobile {
+        display: none !important;
+    }
+
     .header {
         left: 50%;
     }
