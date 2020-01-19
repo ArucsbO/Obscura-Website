@@ -32,6 +32,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
   </head>
 
   <body>
@@ -604,6 +609,25 @@
         y: 20,
         ease: Expo.easeInOut
       });
+
+      TweenMax.from(".menu", 2, {
+        delay: 9,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.staggerFrom(
+        ".listensong ul li",
+        2,
+        {
+          delay: 5.9,
+          opacity: 0,
+          y: 20,
+          ease: Expo.easeInOut
+        },
+        0.1
+      );
 
       TweenLite.fromTo(
         ".hero-title h1",
