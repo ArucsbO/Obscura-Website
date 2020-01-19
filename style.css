@@ -362,7 +362,7 @@ body {
 
 #c-title {
     font-weight: 700;
-    font-family: Poppins !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .header {
@@ -427,7 +427,7 @@ body {
 
 .nav #brand a {
     color: #fff;
-    font-family: Poppins !important;
+    font-family: 'Poppins', sans-serif !important;
     transition: all 500ms ease-out;
 }
 
