@@ -1,849 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ObscurA is an online crypt hunt, where players crack
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ObscurA is an online crypt hunt, where players crack
       ciphers, codes and puzzles - clues for which are all over
-      the web."
-    />
-    <meta
-      name="keywords"
-      content="obscura,gawds,online,crypt,hunt,obscura7.5,nit,nit kurukshetra"
-    />
-    <meta name="author" content="saranonearth" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Obscura</title>
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap"
-      rel="stylesheet"
-    />
+      the web." />
+  <meta name="keywords" content="obscura,gawds,online,crypt,hunt,obscura7.5,nit,nit kurukshetra" />
+  <meta name="author" content="saranonearth" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet" />
+  <title>Obscura</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap" rel="stylesheet" />
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="./style.css" />
-    <!-- cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
-    />
-    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css" />
+  <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+</head>
 
-  <body>
-    <!-- splash screen -->
-    <div class="splash">
-      <div>
-        <p class="s-title">ObscurA</p>
-        <p class="dev-gawds">Developed by GAWDS</p>
-        <br />
-        <div id="myProgress">
-          <div id="myBar"></div>
-        </div>
+<body>
+  <!-- splash screen -->
+  <div class="splash">
+    <div>
+      <p class="s-title">ObscurA</p>
+      <p class="dev-gawds">Developed by GAWDS</p>
+      <br />
+      <div id="myProgress">
+        <div id="myBar"></div>
       </div>
     </div>
-    <div class="main-1">
-      <a name="home"></a>
-      <div class="wrapper">
-        <div class="video-container">
-          <div class="wrapper">
-            <div class="hero-section">
-              <div class="nav"></div>
-              <div class="listensong animated fadeIn delay-3s">
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/obscuranitkkr/"
-                      >facebook</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/obscura_nit_kkr?lang=en"
-                      >twitter</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <div class="hero-gif"></div>
+  </div>
+  <div class="main-1">
+    <a name="home"></a>
+    <div class="wrapper">
+      <div class="video-container">
+        <div class="wrapper">
+          <div class="hero-section">
+            <div class="nav"></div>
+            <div class="listensong animated fadeIn delay-3s">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/obscuranitkkr/">facebook</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/obscura_nit_kkr?lang=en">twitter</a>
+                </li>
+              </ul>
             </div>
 
-            <div class="gif-overlay"></div>
+            <div class="hero-gif"></div>
           </div>
+
+          <div class="gif-overlay"></div>
         </div>
-        <div class="header p animated fadeIn delay-4s">
-          <h1 id="c-title">ObscurA 7.5</h1>
-          <p class="section-subheading p">Starts in</p>
-          <p id="demo" class="p"></p>
+      </div>
+      <div class="header p animated fadeIn delay-4s">
+        <h1 id="c-title">ObscurA 7.5</h1>
+        <p class="section-subheading p">Starts in</p>
+        <p id="demo" class="p"></p>
+      </div>
+
+      <nav class="nav animated fadeIn delay-3s">
+        <span id="brand">
+          <a href="index.html">ObscurA</a>
+        </span>
+
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#winner">Game v7.0</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+
+        <div id="toggle">
+          <div class="span">menu</div>
         </div>
+      </nav>
 
-        <nav class="nav animated fadeIn delay-3s">
-          <span id="brand">
-            <a href="index.html">ObscurA</a>
-          </span>
+      <div id="resize">
+        <div class="close-btn">close</div>
 
-          <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#winner">Game v7.0</a></li>
-            <li><a href="#team">Team</a></li>
-          </ul>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#winner">Game v7.0</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
 
-          <div id="toggle">
-            <div class="span">menu</div>
-          </div>
-        </nav>
+      <div class="content">
+        <a name="about"></a>
 
-        <div id="resize">
-          <div class="close-btn">close</div>
-
-          <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#winner">Game v7.0</a></li>
-            <li><a href="#team">Team</a></li>
-          </ul>
-        </div>
-
-        <div class="content">
-          <a name="about"></a>
-
-          <section class="story">
-            <div class="container-fluid">
-              <div class="section-data">
-                <div class="row">
-                  <div class="col-md-2"></div>
-                  <div
-                    class="col-md-2 section-index wow fadeInUp"
-                    data-wow-delay="0.3s"
-                  >
-                    01
-                  </div>
-                  <div
-                    class="col-md-8 section-heading wow fadeInUp"
-                    data-wow-delay="0.4s"
-                  >
-                    What is ObscurA?
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-4"></div>
-                  <div
-                    class="col-md-6 section-subheading wow fadeInUp"
-                    data-wow-delay="0.5s"
-                  >
-                    <h1>
-                      ObscurA is an online crypt hunt, where players crack
-                      ciphers, codes and puzzles - clues for which are all over
-                      the web.
-                    </h1>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-4"></div>
-                  <div
-                    class="col-md-6 section-info wow fadeInUp"
-                    data-wow-delay="0.6s"
-                  >
-                    Fire up your inner sleuth and get ready to go down the
-                    rabbit hole once again. All means are allowed and
-                    encouraged. ObscurA will not only require your knowledge but
-                    also reasoning and resourcefulness on the internet.
-                    <br />
-                    <br />
-                    <div class="flex">
-                      <div>
-                        <img
-                          class="id"
-                          src="./Team/AbhimanyuSingh.jpg"
-                          alt="abhi"
-                        />
-                      </div>
-                      <div>
-                        <a
-                          class="link-mobile"
-                          href="https://www.quora.com/What-are-the-best-online-treasure-hunt-questions-faced/answer/Abhimanyu-28"
-                          >Some questions from previous ObscurAs.</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <a name="winner"></a>
-
-          <section class="services">
-            <div class="container-fluid">
-              <div class="section-data">
-                <div class="row">
-                  <div class="col-md-2"></div>
-                  <div
-                    class="col-md-2 section-index wow fadeInUp"
-                    data-wow-delay="0.3s"
-                  >
-                    02
-                  </div>
-                  <div
-                    class="col-md-8 section-heading wow fadeInUp"
-                    data-wow-delay="0.4s"
-                  >
-                    Game v7.0
-                  </div>
-                </div>
-
-                <div class="row service">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="section-heading">
-                      Game went live on 8th Novemeber,'19
-                    </p>
-                    <p class="section-heading">500+ players</p>
-                    <div class="icon-title">
-                      Winner The_Little
-                    </div>
-                    <div>
-                      <iframe
-                        class="no-mobile"
-                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fobscuranitkkr%2Fposts%2F1161943090661695&width=500"
-                        width="500"
-                        height="211"
-                        style="border:none;overflow:hidden"
-                        scrolling="no"
-                        frameborder="0"
-                        allowTransparency="true"
-                        allow="encrypted-media"
-                      ></iframe>
-                      <br />
-                      <br />
-                      <p>Reviews</p>
-
-                      <p class="Name">
-                        <a href="https://www.facebook.com/apoorv0910"
-                          >Apoorv Joshi
-                        </a>
-                      </p>
-                      <h6 class="content-r">
-                        The hunt had good questions and some rather very vague
-                        ones as well (like always🌚). The event was a lot of fun
-                        especially with a 24hrs deficit to catch up for XD Great
-                        experience for the last Obscura to make it 4 on the
-                        trot😂😂 This is THE LITTLE signing off!
-                      </h6>
-                      <p class="Name">
-                        <a href="https://www.facebook.com/shaurya.gautam.507"
-                          >Shaurya Gautam
-                        </a>
-                      </p>
-                      <h6 class="content-r">
-                        As always... it was an incredible journey and couldn't
-                        have been more fun with the surprise return of THE
-                        LITTLE. Questions were amazing and hints given were
-                        neither too direct nor too vague. Tnx ObscurA... P.S-
-                        Tawa Chicken is all set for ObscurA8.0... Beware!!!😎
-                      </h6>
-                      <p class="Name">
-                        <a
-                          href="https://www.facebook.com/profile.php?id=100006934149623"
-                          >Kapil Sharma
-                        </a>
-                      </p>
-                      <h6 class="content-r">
-                        It was an exhilarating experience this time as well as
-                        last time . The questions require critical analysis of
-                        knowledge as well as skill. Couldnt give my 100% this
-                        time but Fingers are crossed for next time . ( TAWA
-                        CHICKEN ROX)
-                      </h6>
-                      <br />
-                      <a
-                        href="https://www.facebook.com/obscuranitkkr/posts/1161943090661695?__xts__[0]=68.ARD2l2unRVc_cj4TGYOhKyuxykSg_n6Y1CbtAF52o7TYN4GaRQIeg1yeQjjphxSaOWU9u81EuRzZWfV7pWIBHE7tovQ6aGP9Sv0_G5Izft6RkmzzoLjF3Feb1N5iL0xxX0bCC4T3UDBejZR4mEd6XYg0cQg60dHOow9qbVC8UIigmZIi4DLwq332NzanTp0KsfA_dXBd_hSf7hMxp9k5EuqJd59KFlTVInmTrIxur5K-MbShHgSvqb9L_Fu2waDThjtYiTkiDuij1ASoGbf-oFIwA3m7isOtnN8iEPepWrVTP4z9h2S2TlL_8WTo87Y_ZSFJLB4YIQ7TQENtfdKjJA&__tn__=-R"
-                        class="Button"
-                        >More</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <a name="team"></a>
-
-          <section class="team">
-            <div class="container-fluid">
+        <section class="story">
+          <div class="container-fluid">
+            <div class="section-data">
               <div class="row">
                 <div class="col-md-2"></div>
-                <div
-                  class="col-md-2 section-index wow fadeInUp"
-                  data-wow-delay="0.3s"
-                >
-                  03
+                <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">
+                  01
                 </div>
-                <div
-                  class="col-md-8 section-heading wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  Team ObscurA
+                <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">
+                  What is ObscurA?
                 </div>
               </div>
 
-              <div class="row members">
+              <div class="row">
                 <div class="col-md-4"></div>
+                <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
+                  <h1>
+                    ObscurA is an online crypt hunt, where players crack
+                    ciphers, codes and puzzles - clues for which are all over
+                    the web.
+                  </h1>
+                </div>
+              </div>
 
-                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">
+                  Fire up your inner sleuth and get ready to go down the
+                  rabbit hole once again. All means are allowed and
+                  encouraged. ObscurA will not only require your knowledge but
+                  also reasoning and resourcefulness on the internet.
+                  <br />
+                  <br />
                   <div class="flex">
                     <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/AnshulMalik.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Anshul Malik</p>
+                      <img class="id" src="./Team/AbhimanyuSingh.jpg" alt="abhi" />
                     </div>
                     <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/VedantNepal.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Vedant Nepal</p>
-                    </div>
-
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Vatsal Garg.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Vatsal Garg</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/IMG-20190113-WA0043.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text"></p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Srijan Saxena.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Srijan Saxena</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Utkarsh Kumar.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Utkarsh Kumar</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/SaqibKamal.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Saqib Kamal</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/PrashantKumar.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Prashant Kumar</p>
-                    </div>
-
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/IMG-20190113-WA0041.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text"></p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Arijit.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Arijit</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/DevayanMishra.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Devayan Mishra</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/12087904_1047786278566471_6169075697809371159_o.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text"></p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Pusharak.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Pusharak</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/TanviSingla.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Tanvi Singla</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Shubhankar.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Shubhankar</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/RajanNagpal.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Rajan Nagpal</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/SushantAdla.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Sushant Adla</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/PrakharMaheshwari.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Prakhar</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/AnujSharma.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Anuj Sharma</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/AryanKaul.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Aryan Kaul</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/AvinashBharti.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Avinash</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/KartikYadav.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Kartik Yadav</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/SaurabhNandedkar.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Saurabh</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/YaseenGouseSamudri.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Yaseen</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/IMG_20190214_153118.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Ajay</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/IMG_20190211_160435_885.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Hemant</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img class="t-image" src="./Team/saran.jpg" alt="img" />
-                      </div>
-                      <p class="t-text">SARAN</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/Utkarsh[2331].jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Utkarsh</p>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          class="t-image"
-                          src="./Team/IMG_20190822_122515[2330].jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <p class="t-text">Prathyush</p>
+                      <a class="link-mobile"
+                        href="https://www.quora.com/What-are-the-best-online-treasure-hunt-questions-faced/answer/Abhimanyu-28">Some
+                        questions from previous ObscurAs.</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <div class="footer">
-            <div class="container">
-              <div class="info">
-                <div class="row">
-                  <div
-                    class="col-md-4 wow fadeInUp"
-                    data-wow-delay="0.3s"
-                    id="address"
-                  >
-                    <p>Location</p>
-                    <h5>29.9476° N, 76.8155° E</h5>
+        <a name="winner"></a>
 
-                    <br /><br />
+        <section class="services">
+          <div class="container-fluid">
+            <div class="section-data">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">
+                  02
+                </div>
+                <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">
+                  Game v7.0
+                </div>
+              </div>
+
+              <div class="row service">
+                <div class="col-md-4"></div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                  <p class="section-heading">
+                    Game went live on 8th Novemeber,'19
+                  </p>
+                  <p class="section-heading">500+ players</p>
+                  <div class="icon-title">
+                    Winner The_Little
                   </div>
+                  <div>
+                    <iframe class="no-mobile"
+                      src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fobscuranitkkr%2Fposts%2F1161943090661695&width=500"
+                      width="500" height="211" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                      allowTransparency="true" allow="encrypted-media"></iframe>
+                    <br />
+                    <br />
+                    <p>Reviews</p>
 
-                  <div
-                    class="col-md-4 wow fadeInUp"
-                    data-wow-delay="0.4s"
-                    id="media"
-                  >
-                    <br /><br />
-                  </div>
-
-                  <div
-                    class="col-md-4 wow fadeInUp"
-                    data-wow-delay="0.5s"
-                    id="mail"
-                  >
-                    <p>Say Hello</p>
-
-                    <a href="https://www.facebook.com/obscuranitkkr/"
-                      >facebook</a
-                    >
-
-                    <a href="https://twitter.com/obscura_nit_kkr?lang=en"
-                      >twitter</a
-                    >
-
-                    <br /><br />
+                    <p class="Name">
+                      <a href="https://www.facebook.com/apoorv0910">Apoorv Joshi
+                      </a>
+                    </p>
+                    <h6 class="content-r">
+                      The hunt had good questions and some rather very vague
+                      ones as well (like always🌚). The event was a lot of fun
+                      especially with a 24hrs deficit to catch up for XD Great
+                      experience for the last Obscura to make it 4 on the
+                      trot😂😂 This is THE LITTLE signing off!
+                    </h6>
+                    <p class="Name">
+                      <a href="https://www.facebook.com/shaurya.gautam.507">Shaurya Gautam
+                      </a>
+                    </p>
+                    <h6 class="content-r">
+                      As always... it was an incredible journey and couldn't
+                      have been more fun with the surprise return of THE
+                      LITTLE. Questions were amazing and hints given were
+                      neither too direct nor too vague. Tnx ObscurA... P.S-
+                      Tawa Chicken is all set for ObscurA8.0... Beware!!!😎
+                    </h6>
+                    <p class="Name">
+                      <a href="https://www.facebook.com/profile.php?id=100006934149623">Kapil Sharma
+                      </a>
+                    </p>
+                    <h6 class="content-r">
+                      It was an exhilarating experience this time as well as
+                      last time . The questions require critical analysis of
+                      knowledge as well as skill. Couldnt give my 100% this
+                      time but Fingers are crossed for next time . ( TAWA
+                      CHICKEN ROX)
+                    </h6>
+                    <br />
+                    <a href="https://www.facebook.com/obscuranitkkr/posts/1161943090661695?__xts__[0]=68.ARD2l2unRVc_cj4TGYOhKyuxykSg_n6Y1CbtAF52o7TYN4GaRQIeg1yeQjjphxSaOWU9u81EuRzZWfV7pWIBHE7tovQ6aGP9Sv0_G5Izft6RkmzzoLjF3Feb1N5iL0xxX0bCC4T3UDBejZR4mEd6XYg0cQg60dHOow9qbVC8UIigmZIi4DLwq332NzanTp0KsfA_dXBd_hSf7hMxp9k5EuqJd59KFlTVInmTrIxur5K-MbShHgSvqb9L_Fu2waDThjtYiTkiDuij1ASoGbf-oFIwA3m7isOtnN8iEPepWrVTP4z9h2S2TlL_8WTo87Y_ZSFJLB4YIQ7TQENtfdKjJA&__tn__=-R"
+                      class="Button">More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="center">
-              <p class="dev-gawds2">
-                developed by
-                <a href="https://github.com/saranonearth">GAWDS</a> x
-                <a href="https://github.com/saranonearth"> saranonearth</a>
-              </p>
+          </div>
+        </section>
+        <a name="team"></a>
+
+        <section class="team">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">
+                03
+              </div>
+              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">
+                Team ObscurA
+              </div>
             </div>
+
+            <div class="row members">
+              <div class="col-md-4"></div>
+
+              <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="flex">
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Vatsal Garg.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Vatsal</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Prasanna.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Prasanna</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Srijan Saxena.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Srijan</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Utkarsh Kumar.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Utkarsh</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/SaqibKamal.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Saqib</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/PrashantKumar.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Prashant</p>
+                  </div>
+
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Pranjal.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Pranjal</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Arijit.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Arijit</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Chirantan.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Chirantan</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Mithun.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Mithun</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Pusharak.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Pusharak</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/TanviSingla.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Tanvi</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Shubhankar.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Shubhankar</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/RajanNagpal.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Rajan</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/AnshulMalik.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Anshul</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/VedantNepal.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Vedant</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Sushant.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Sushant</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/PrakharMaheshwari.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Prakhar</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/AnujSharma.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Anuj</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/AryanKaul.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Aryan</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/AvinashBharti.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Avinash</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/KartikYadav.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Kartik</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/SaurabhNandedkar.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Saurabh</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/YaseenGouseSamudri.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Yaseen</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Ajay.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Ajay</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Hemant.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Hemant</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/saran.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Saran</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/UtkarshMishra.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Utkarsh</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Pratyush.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Pratyush</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Anmol.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Anmol</p>
+                  </div>
+                  <div>
+                    <div>
+                      <img class="t-image" src="./Team/Priyank.jpg" alt="img" />
+                    </div>
+                    <p class="t-text">Priyank</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer">
+          <div class="container">
+            <div class="info">
+              <div class="row">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="address">
+                  <p>Location</p>
+                  <h5>29.9476° N, 76.8155° E</h5>
+
+                  <br /><br />
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
+                  <br /><br />
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
+                  <p>Say Hello</p>
+
+                  <a href="https://www.facebook.com/obscuranitkkr/">facebook</a>
+
+                  <a href="https://twitter.com/obscura_nit_kkr?lang=en">twitter</a>
+
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <p class="dev-gawds2">
+              developed by
+              <a href="https://github.com/saranonearth">GAWDS</a> x
+              <a href="https://github.com/saranonearth"> saranonearth</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
-    <script>
-      TweenMax.from(".artist", 2, {
-        delay: 5.4,
+  </div>
+  <script src="./script.js"></script>
+  <script>
+    TweenMax.from(".artist", 2, {
+      delay: 5.4,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".menu", 2, {
+      delay: 9,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.staggerFrom(
+      ".listensong ul li",
+      2,
+      {
+        delay: 5.9,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
-      });
+      },
+      0.1
+    );
 
-      TweenMax.from(".menu", 2, {
+    TweenLite.fromTo(
+      ".hero-title h1",
+      0.3,
+      {
+        x: -6,
+        y: 2,
+        opacity: 0
+      },
+      {
+        delay: 5,
+        x: 6,
+        y: -2,
+        opacity: 1,
+        ease: RoughEase.ease.config({
+          strength: 8,
+          points: 40,
+          template: Linear.easeNone,
+          randomize: false
+        }),
+        clearProps: "all"
+      }
+    );
+
+    TweenLite.fromTo(
+      ".hero-title p",
+      0.3,
+      {
+        x: -6,
+        y: 2,
+        opacity: 0
+      },
+      {
         delay: 9,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
+        x: 6,
+        y: -2,
+        opacity: 1,
+        ease: RoughEase.ease.config({
+          strength: 8,
+          points: 40,
+          template: Linear.easeNone,
+          randomize: false
+        }),
+        clearProps: "all"
+      }
+    );
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    // navigation starts here
+    $("#toggle").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+    $("#resize ul li a").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+    $(".close-btn").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".nav");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
       });
+    });
 
-      TweenMax.staggerFrom(
-        ".listensong ul li",
-        2,
-        {
-          delay: 5.9,
-          opacity: 0,
-          y: 20,
-          ease: Expo.easeInOut
-        },
-        0.1
-      );
+    new WOW().init();
 
-      TweenLite.fromTo(
-        ".hero-title h1",
-        0.3,
-        {
-          x: -6,
-          y: 2,
-          opacity: 0
-        },
-        {
-          delay: 5,
-          x: 6,
-          y: -2,
-          opacity: 1,
-          ease: RoughEase.ease.config({
-            strength: 8,
-            points: 40,
-            template: Linear.easeNone,
-            randomize: false
-          }),
-          clearProps: "all"
-        }
-      );
-
-      TweenLite.fromTo(
-        ".hero-title p",
-        0.3,
-        {
-          x: -6,
-          y: 2,
-          opacity: 0
-        },
-        {
-          delay: 9,
-          x: 6,
-          y: -2,
-          opacity: 1,
-          ease: RoughEase.ease.config({
-            strength: 8,
-            points: 40,
-            template: Linear.easeNone,
-            randomize: false
-          }),
-          clearProps: "all"
-        }
-      );
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script>
-      // navigation starts here
-      $("#toggle").click(function() {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
-      $("#resize ul li a").click(function() {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
-      $(".close-btn").click(function() {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
-
-      $(function() {
-        $(document).scroll(function() {
-          var $nav = $(".nav");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-      });
-
-      new WOW().init();
-
-      // Select all links with hashes
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length
-              ? target
-              : $("[name=" + this.hash.slice(1) + "]");
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $("html, body").animate(
-                {
-                  scrollTop: target.offset().top
-                },
-                1000,
-                function() {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) {
-                    // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  }
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function (event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, "") ==
+          this.pathname.replace(/^\//, "") &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.slice(1) + "]");
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $("html, body").animate(
+              {
+                scrollTop: target.offset().top
+              },
+              1000,
+              function () {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) {
+                  // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
                 }
-              );
-            }
+              }
+            );
           }
-        });
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- jquery -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <!-- tweenmax - gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Mar 21, 2020 19:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
         }
-      }, 1000);
-    </script>
-  </body>
+      });
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- jquery -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- tweenmax - gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 21, 2020 19:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+</body>
+
 </html>
